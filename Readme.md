@@ -52,3 +52,10 @@ The script as started as a dual config tool: user and machine configuration shou
 But due to some security concerns and the realization that this is not really necessary, the "machine" part got more and more useless.
 
 Maybe the need comes back sometime, so I decided to keep that "preperation".
+
+# Known issues
+## Powershell window pops up
+If you use the scheduled task, a Powershell window pops up everytime the script runs. There are some tools to hide the window, but most of them causes a false-positive detection of virus scanners.
+
+## Incorrect handling
+From time to time, the devices is in a known network but the default location is used. Currently I assume it's related to the timing of the NLA event trigger.
