@@ -1,0 +1,44 @@
+{
+    "Location1": {
+        "user": {
+            "env": {
+                "proxy": "http://localhost:3128",
+                "noproxy": "127.0.0.1, localhost, 192.168."
+            },
+            "git": {
+                "proxy": "http://localhost:3128",
+                "user": "user",
+                "email": "mail@domain.tld"
+                "https://someserver.domain.internal": {
+                    "proxy": ""
+                }
+            }
+        }
+    },
+    "Location2": {
+        "user": {
+            "env": {
+                "proxy": "http://proxy.domain.internal:8080",
+                "noproxy": "127.0.0.1, localhost, 192.168."
+            },
+            "git": {
+                "proxy": "http://proxy.domain.internal:8080",
+                "user": "user",
+                "email": "mail@domain.tld"
+            }
+        }
+    },
+    "default": {
+        "user": {
+            "env": {
+                "proxy": "",
+                "noproxy": ""
+            },
+            "git": {
+                "proxy": "",
+                "user": "user",
+                "email": "mail@domain.tld"
+            }
+        }
+    }
+}
